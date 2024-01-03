@@ -90,7 +90,6 @@ padding-bottom: 15px;
 
 .work {
 	display: grid;
-	grid-template-columns: repeat(1fr, 3);
 	grid-template-areas: "block2 block3";
 }
 
@@ -144,7 +143,7 @@ padding-bottom: 15px;
 	font-size: 15px;
 }
 
-.contact h1 {
+.contactheading h1{
 	color: #F26929;
 	font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
 	font-weight: normal;
@@ -152,10 +151,32 @@ padding-bottom: 15px;
 	text-align: left;
 	padding-top: 30px;
 	padding-left: 50px;
+	padding-bottom: 20px;
 }
 
-#phone {
-	padding: 40px; 
+.contact {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	
 }
 
+.contactme {
+	display: flex;
+	flex-direction: row;
+	padding-top: -25px;
+	padding-left: 50px;
+	padding-right: 20px;
+}
+
+.contactme p {
+	font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
+	font-weight: normal;
+	font-size: 18px;
+	color: #8C173A;
+	padding: 10px;
+}
+
+.contactme img {
+	height: 50%;
+}
 
