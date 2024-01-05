@@ -9,46 +9,82 @@ body {
 }
 
 .header {
-	padding: 20px;
+	padding-top:40px;
+	padding-bottom: 40px;
 	background-color: #8C173A;
-	color:#F9F8F3;
 }
 
-.logo {
-	margin-left: 50px;
+.header img {
+	padding-left: 100px;
+
 }
 
-.topnav {
+.topnav ul {
 	font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
 	float: right;
-	margin-right: 80px;
-	margin-top: -80px;
+	padding-top: 25px;
+	padding-right: 180px;
+
 }
 
 .topnav ul li {
 	display: inline-block;
 	list-style-type: none;
-	padding-right: 20px;
-	margin-left: 20px;
-	font-size: 30px;
+	text-decoration: none !important;
+	font-size: 18px;
+	margin-left: 50px;
+	color: #F9F8F3;
+	
 }
 
-.about {
-	display: flex;
-	height: 900px;
-	padding-top: 20px;
-	margin-bottom: -400px;
-	flex-direction: row;
-	justify-content: space-evenly;
+.topnav ul li a:hover{
+	color: #D1D0CD;
+
+}
+
+.topnav ul li a:visited {
+	color: #E2E1DE;	
+
+}
+
+
+#about {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-items: start;
+	padding-top: 50px;
+	padding-left: 50px;
+}
+
+.about-text {
+	padding-bottom: 50px;
+	padding-right: 120px;
+	padding-left: 50px;
+}
+
+.about-text h2 {
+	color: #8C173A;
+	font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
+	font-weight: normal;
+	font-size: 45px;
+	text-align: left;
+	padding-top: 30px;
+	padding-bottom: 40px;
 }
 
 .about-text p {
-font-size: 20px;
-font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
-color: #8C173A;
-padding-left: 50px;
-padding-right: 50px;
-padding-bottom: 15px;
+	font-size: 20px;
+	font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
+	color: #F26929;
+	line-height: 24px;
+	text-align: left;
+}
+
+.headshot {
+	padding-left: 30px;
+	padding-top: 10px;
+	
 }
 
 .button {
@@ -58,39 +94,47 @@ padding-bottom: 15px;
 	font-size: 18px;
 	padding-left: 50px;
 	padding-right: 50px;
-	padding-top: 15px;
+	padding-top: 20px;
 	padding-bottom: 15px;
 	text-align: center;
-	margin-left: 50px;
-	margin-top: 25px;
 	border-radius: 50px;
 	border: none;
+	margin-left: 50px;
+	margin-bottom: 30px;
 }
 
 .button:hover {
 	background-color: #DD5B28;
 }
 
-.block{
+
+#block{
 		background-color: #C7E4E3;
 		margin-top: 50px;
 		margin-bottom: 20px;
-		padding: 0px;
+		padding-left: 50px;
+		padding-right: 50px;
 }
 
-.block h1 {
+#block h1 {
 	color: #007D78;
 	font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
 	font-weight: normal;
 	font-size: 45px;
-	text-align: right;
-	padding-top: 30px;
-	padding-right: 50px;
+	text-align: left;
+	padding-top: 50px;
+	padding-left: 50px;
 }
 
 .work {
 	display: grid;
 	grid-template-areas: "block2 block3";
+	transition: box-shadow .3s;
+	
+}
+
+.work div:hover {
+	box-shadow: 0 0 11px rgba(29, 82, 114, 0.4);
 }
 
 .work div {
@@ -128,19 +172,30 @@ padding-bottom: 15px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	text-align: center;
+	background-image: url("../images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: box-shadow .4s;
+}
+
+.block1:hover {
+	box-shadow: 0 0 11px rgba(29, 82, 114, 0.4);
 }
 
 .block1 h2 {
 	font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
-	color: #8C173A;
+	color: #F9F8F3;
 	font-size: 28px;
 	font-weight: normal;
+	text-shadow: 3px 6px 15px #000000;
 }
 
 .block1 p {
 	font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
-	color: #8C173A;
+	color: #F9F8F3;
 	font-size: 15px;
+	text-shadow: 2px 4px 8px #000000;
 }
 
 .contactheading h1{
@@ -150,11 +205,11 @@ padding-bottom: 15px;
 	font-size: 45px;
 	text-align: left;
 	padding-top: 30px;
-	padding-left: 50px;
-	padding-bottom: 20px;
+	padding-left: 90px;
+	padding-bottom: 40px;
 }
 
-.contact {
+#contact {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	
@@ -164,7 +219,7 @@ padding-bottom: 15px;
 	display: flex;
 	flex-direction: row;
 	padding-top: -25px;
-	padding-left: 50px;
+	padding-left: 90px;
 	padding-right: 20px;
 }
 
