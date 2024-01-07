@@ -22,15 +22,16 @@ body {
 .topnav ul {
 	font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
 	float: right;
-	padding-top: 25px;
+	padding-top: 20px;
 	padding-right: 180px;
+	display: flex;
+	flex-direction: row;
 
 }
 
 .topnav ul li {
 	display: inline-block;
 	list-style-type: none;
-	text-decoration: none !important;
 	font-size: 18px;
 	margin-left: 50px;
 	color: #F9F8F3;
@@ -39,6 +40,8 @@ body {
 
 .topnav ul li a{
 	text-decoration: none;
+	color: #F9F8F3;
+
 }
 
 .topnav ul li a:hover{
@@ -88,7 +91,7 @@ body {
 .headshot {
 	padding-left: 30px;
 	padding-top: 10px;
-	
+
 }
 
 .button {
@@ -207,6 +210,7 @@ body {
 	font-size: 28px;
 	font-weight: normal;
 	text-shadow: 3px 6px 15px #000000;
+	text-align: center;
 }
 
 .block1 p {
@@ -214,6 +218,7 @@ body {
 	color: #F9F8F3;
 	font-size: 15px;
 	text-shadow: 2px 4px 8px #000000;
+	text-align:center;
 }
 
 .block2 {
@@ -292,5 +297,71 @@ body {
 
 .contactme a:visited {
 	color: #6e122e;
+}
+
+
+
+
+@media (max-width:1024px) {
+	body{
+		position: absolute;
+	}
+
+	.header img {
+		display: block;
+		width: 80%;
+		min-height: 30%;
+		text-align: center;
+	}
+
+	.header {
+		padding-bottom: 70px;
+	}
+
+	.topnav ul {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#about {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.headshot {
+		margin-right: 100px;
+	}
+
+	.button {
+		margin-bottom: 10px;
+		margin-top: 20px;
+		margin-right: 100px;
+	}
+
+	.work{
+		display:flex;
+		flex-direction: column;
+	}
+
+	.block1
+		{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#contact {
+			display: flex;
+			flex-direction: column;
+			}
+
+	.contactme img {
+			max-height: 30px;
+			margin: 5px;
+		}
+
+	.contactme p {
+			margin: 5px;
+				}
+
 }
 
