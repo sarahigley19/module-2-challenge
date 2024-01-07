@@ -37,6 +37,10 @@ body {
 	
 }
 
+.topnav ul li a{
+	text-decoration: none;
+}
+
 .topnav ul li a:hover{
 	color: #D1D0CD;
 
@@ -101,12 +105,24 @@ body {
 	border: none;
 	margin-left: 50px;
 	margin-bottom: 30px;
+	
 }
 
 .button:hover {
 	background-color: #DD5B28;
 }
 
+.button a {
+	text-decoration: none;
+}
+
+.button a:hover {
+	color: #F9F8F3;
+}
+
+.button a:visited {
+	color: #E2E1DE;
+}
 
 #block{
 		background-color: #C7E4E3;
@@ -151,15 +167,17 @@ body {
 
 .work h2 {
 	font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
-	color: #8C173A;
+	color: #F9F8F3;
 	font-size:28px;
 	font-weight: normal;
+	text-shadow: 3px 6px 15px #000000;
 }
 
 .work p {
 	font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
-	color: #8C173A;
+	color: #F9F8F3;
 	font-size: 15px;
+	text-shadow: 2px 4px 8px #000000;
 }
 
 .block1{
@@ -172,7 +190,7 @@ body {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	text-align: center;
-	background-image: url("../images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg");
+	background-image: url("../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -196,6 +214,34 @@ body {
 	color: #F9F8F3;
 	font-size: 15px;
 	text-shadow: 2px 4px 8px #000000;
+}
+
+.block2 {
+	background-image: url("../images/aryan-dhiman-iGLLtLINSkw-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.block3 {
+	background-image: url("../images/amol-tyagi-UZFCQPNc4bs-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.block4 {
+	background-image: url("../images/ashkan-forouzani-m0l9NBCivuk-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.block5 {
+	background-image: url("../images/brett-jordan-ZVhbwDfLtYU-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .contactheading h1{
@@ -233,5 +279,18 @@ body {
 
 .contactme img {
 	height: 50%;
+}
+
+.contactme a{
+	text-decoration: none;
+	color: #8C173A;
+}
+
+.contactme a:hover {
+	color:#670b28;
+}
+
+.contactme a:visited {
+	color: #6e122e;
 }
 
