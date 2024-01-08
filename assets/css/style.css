@@ -310,8 +310,8 @@ body {
 }
 
 
-/* Mobile Version */
-@media (max-width:768px) {
+/* Responsive Version Tablet/Mobile */
+@media (max-width:820px) {
 	body{
 		position: absolute;
 	}
@@ -321,7 +321,7 @@ body {
 	}
 
 	.topnav ul {
-		margin-right: -20px;
+		margin-right: 50px;
 		padding-top: 30px;
 		margin-bottom: -40px;
 	}
@@ -374,3 +374,11 @@ body {
 
 }
 
+/* Responsive Version Mobile */
+@media (width:430px) { 
+	.topnav ul	{
+		margin-right: -20px;
+		padding-top: 30px;
+		margin-bottom: -40px;	
+}
+}
