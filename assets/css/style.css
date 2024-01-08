@@ -6,6 +6,7 @@
 
 body {
 	background-color: #F9F8F3;
+	
 }
 
 .header {
@@ -117,6 +118,7 @@ body {
 
 .button a {
 	text-decoration: none;
+	color: #F9F8F3;
 }
 
 .button a:hover {
@@ -305,6 +307,7 @@ body {
 @media (max-width:1024px) {
 	body{
 		position: absolute;
+		overflow-x: hidden;
 	}
 
 	.header img {
@@ -321,6 +324,7 @@ body {
 	.topnav ul {
 		display: flex;
 		flex-direction: row;
+		margin-right: -20px;
 	}
 
 	#about {
