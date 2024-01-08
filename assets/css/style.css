@@ -6,7 +6,7 @@
 
 body {
 	background-color: #F9F8F3;
-	max width: 100%;
+	max-width: auto;
 	max-height: 100%;
 	margin: 0px;
 	padding: 0px;
@@ -316,17 +316,19 @@ body {
 
 
 /* Mobile Version */
-@media (max-width:768px) {
+@media (max-width:1024px) {
 	body{
 		position: absolute;
-		
 	}
+
 	.header {
 		padding-bottom: 70px;
 	}
 
 	.topnav ul {
 		margin-right: -20px;	
+		display: block;
+		text-align: center;
 	}
 
 	.header img {
