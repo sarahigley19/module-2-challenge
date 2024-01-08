@@ -2,15 +2,11 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 body {
 	background-color: #F9F8F3;
-	max-width: auto;
-	max-height: 100%;
-	margin: 0px;
-	padding: 0px;
-	overflow-x: hidden;
 	
 }
 
@@ -31,8 +27,7 @@ body {
 	float: right;
 	padding-top: 20px;
 	padding-right: 180px;
-	display: flex;
-	flex-direction: row;
+	display: inline;
 
 }
 
@@ -316,7 +311,7 @@ body {
 
 
 /* Mobile Version */
-@media (max-width:768px) {
+@media (max-width:1024px) {
 	body{
 		position: absolute;
 	}
@@ -326,9 +321,9 @@ body {
 	}
 
 	.topnav ul {
-		margin-right: -20px;	
-		display: block;
-		text-align: center;
+		margin-right: -20px;
+		padding-top: 30px;
+		margin-bottom: -40px;
 	}
 
 	.header img {
