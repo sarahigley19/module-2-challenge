@@ -177,14 +177,14 @@ body {
 	color: #F9F8F3;
 	font-size:28px;
 	font-weight: normal;
-	text-shadow: 3px 6px 15px #000000;
+	text-shadow: 1px 1px 6px #000000;
 }
 
 .work p {
 	font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
 	color: #F9F8F3;
 	font-size: 15px;
-	text-shadow: 2px 4px 8px #000000;
+	text-shadow: 2px 1px 2px #000000;
 }
 
 /* Surf Report */
@@ -214,7 +214,7 @@ body {
 	color: #F9F8F3;
 	font-size: 28px;
 	font-weight: normal;
-	text-shadow: 3px 6px 15px #000000;
+	text-shadow: 1px 1px 6px #000000;
 	text-align: center;
 }
 
@@ -222,7 +222,7 @@ body {
 	font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
 	color: #F9F8F3;
 	font-size: 15px;
-	text-shadow: 2px 4px 8px #000000;
+	text-shadow: 2px 1px 4px #000000;
 	text-align:center;
 }
 
@@ -376,9 +376,11 @@ body {
 
 /* Responsive Version Mobile */
 @media (width:430px) { 
+
 	.topnav ul	{
 		margin-right: -20px;
 		padding-top: 30px;
-		margin-bottom: -40px;	
+		margin-bottom: -40px;
+		
 }
 }
