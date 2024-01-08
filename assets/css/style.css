@@ -9,6 +9,7 @@ body {
 	
 }
 
+/* Header and Top Navigation */
 .header {
 	padding-top:40px;
 	padding-bottom: 40px;
@@ -55,7 +56,7 @@ body {
 
 }
 
-
+/* About Me Section */
 #about {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -129,6 +130,7 @@ body {
 	color: #E2E1DE;
 }
 
+/* My Work Section */
 #block{
 		background-color: #C7E4E3;
 		margin-top: 50px;
@@ -185,6 +187,7 @@ body {
 	text-shadow: 2px 4px 8px #000000;
 }
 
+/* Surf Report */
 .block1{
 	background-color: #F9F8F3;
 	border: 2px solid #007D78;
@@ -223,6 +226,7 @@ body {
 	text-align:center;
 }
 
+/* LED Wall */
 .block2 {
 	background-image: url("../images/led-wall.jpg");
 	background-repeat: no-repeat;
@@ -230,6 +234,7 @@ body {
 	background-position: center;
 }
 
+/* Calculator */
 .block3 {
 	background-image: url("../images/calculator.jpg");
 	background-repeat: no-repeat;
@@ -237,6 +242,7 @@ body {
 	background-position: center;
 }
 
+/* Pastel Puzzle */
 .block4 {
 	background-image: url("../images/pastel-puzzzles.jpg");
 	background-repeat: no-repeat;
@@ -244,6 +250,7 @@ body {
 	background-position: center;
 }
 
+/* Run Buddy */
 .block5 {
 	background-image: url("../images/run-buddy.jpg");
 	background-repeat: no-repeat;
@@ -251,6 +258,7 @@ body {
 	background-position: center;
 }
 
+/* Contact Me Section */
 .contactheading h1{
 	color: #F26929;
 	font-family: 'Josefin Sans', 'Lucida Sans', 'Arial';
@@ -271,7 +279,7 @@ body {
 .contactme {
 	display: flex;
 	flex-direction: row;
-	padding-top: -25px;
+	padding-top: -55px;
 	padding-left: 90px;
 	padding-right: 20px;
 }
@@ -302,12 +310,18 @@ body {
 }
 
 
-
-
-@media (max-width:1024px) {
+/* Mobile Version */
+@media (max-width:800px) {
 	body{
 		position: absolute;
-		overflow-x: hidden;
+		
+	}
+	.header {
+		padding-bottom: 70px;
+	}
+
+	.topnav ul {
+		margin-right: -20px;	
 	}
 
 	.header img {
@@ -315,16 +329,6 @@ body {
 		width: 80%;
 		min-height: 30%;
 		text-align: center;
-	}
-
-	.header {
-		padding-bottom: 70px;
-	}
-
-	.topnav ul {
-		display: flex;
-		flex-direction: row;
-		margin-right: -20px;
 	}
 
 	#about {
@@ -342,13 +346,12 @@ body {
 		margin-right: 100px;
 	}
 
-	.work{
+	.work {
 		display:flex;
 		flex-direction: column;
 	}
 
-	.block1
-		{
+	.block1 {
 		display: flex;
 		flex-direction: column;
 	}
@@ -365,7 +368,7 @@ body {
 
 	.contactme p {
 			margin: 5px;
-				}
+		}
 
 }
 
